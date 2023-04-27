@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "scrape": "tsx scripts/scrape.ts",
-    "embed": "tsx scripts/embed.ts"
+    "scrape2": "tsx scripts/scrape2.ts",
+    "embed": "tsx scripts/embed.ts",
+    "embed2": "tsx scripts/embed2.ts"
   },
   "dependencies": {
     "@next/font": "^13.2.3",
