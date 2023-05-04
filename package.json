@@ -10,7 +10,8 @@
     "scrape": "tsx scripts/scrape.ts",
     "scrape2": "tsx scripts/scrape2.ts",
     "embed": "tsx scripts/embed.ts",
-    "embed2": "tsx scripts/embed2.ts"
+    "embed2": "tsx scripts/embed2.ts",
+    "input": "tsx scripts/input.ts"
   },
   "dependencies": {
     "@next/font": "^13.2.3",
