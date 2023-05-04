@@ -10,7 +10,7 @@ loadEnvConfig("");
 const CHUNK_SIZE = 200;
 const DELIMITER_CN = "。";
 
-const getEssay = async (text: string) => {
+const getEssay = async (raw: string) => {
 	let essay: PGEssay = {
 		title: "文本",
 		url: "",
@@ -22,7 +22,7 @@ const getEssay = async (text: string) => {
 		chunks: []
 	};
 
-	const article = [text];
+	const article = [raw];
 
 	article.forEach((item) => {
 		const text = (item);
@@ -32,7 +32,7 @@ const getEssay = async (text: string) => {
 
 		const date = cleanedText.match(/(\d{4}年\d+月\d+日)/);
 		let dateStr = "";
-		let textWithoutDate = "";
+		let textWithoutDate = cleanedText;
 
 		if (date) {
 			dateStr = date[0];
